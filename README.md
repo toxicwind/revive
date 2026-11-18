@@ -8,6 +8,10 @@
 
 </div>
 
+<p align="center">
+  <img src="revive-hero.png" alt="revive — dead plugin UI becomes a usable one" width="800">
+</p>
+
 ---
 
 ## Yes. It's that bug. The one you've been rage-googling.
