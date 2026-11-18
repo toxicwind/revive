@@ -1,0 +1,31 @@
+{
+  "name": "revive",
+  "version": "1.0.0",
+  "description": "Ableton Live plugin-UI recovery watchdog — detects the dead plugin-metadata IPC channel and force-restarts the wedged Index peer so VSTi UIs reopen. Clean capability, no internals.",
+  "aliases": [
+    "ableton-revive",
+    "plugin-ui-fix",
+    "ipc-watchdog",
+    "unwedge",
+    "respawn"
+  ],
+  "type": "module",
+  "private": true,
+  "bin": {
+    "revive": "bin/revive.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./watchdog": "./src/watchdog.ts",
+    "./install": "./src/install.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "check": "bunx oxlint . && bunx oxfmt --check 'src/**/*.ts' 'bin/**/*.ts' 'test/**/*.ts'",
+    "lint": "bunx oxlint ."
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "bun-types": "^1.4.4"
+  }
+}
